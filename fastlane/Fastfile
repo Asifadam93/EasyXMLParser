@@ -8,4 +8,23 @@ scan(
 
 xcov
 
+lane :deploy do
+
+	if git_branch() == "master"
+
+		version = get_version_number()
+		print version
+
+		set_github_release(
+			repository_name: "Asifadam93/EasyXMLParser",
+			name: version,
+			tag_name: "v#{version}",
+			api_token: ENV["GITHUB_TOKEN"],
+			description: changelog_from_git_commits(),
+			commitish: "master"
+		)
+
+
+	end
+
 end

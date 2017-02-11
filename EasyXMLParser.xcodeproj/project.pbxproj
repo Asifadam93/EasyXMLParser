@@ -13,6 +13,7 @@
 		3B7703541E43CC200059F0CD /* EasyXMLParser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B77034A1E43CC200059F0CD /* EasyXMLParser.framework */; };
 		3B7703591E43CC200059F0CD /* EasyXMLParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7703581E43CC200059F0CD /* EasyXMLParserTests.swift */; };
 		3B77035B1E43CC200059F0CD /* EasyXMLParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B77034D1E43CC200059F0CD /* EasyXMLParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3BA40E1B1E4F981000816856 /* UtilisationXMLParserTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA40E1A1E4F981000816856 /* UtilisationXMLParserTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +36,7 @@
 		3B7703531E43CC200059F0CD /* EasyXMLParserTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EasyXMLParserTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B7703581E43CC200059F0CD /* EasyXMLParserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyXMLParserTests.swift; sourceTree = "<group>"; };
 		3B77035A1E43CC200059F0CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3BA40E1A1E4F981000816856 /* UtilisationXMLParserTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UtilisationXMLParserTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 			children = (
 				3B7703581E43CC200059F0CD /* EasyXMLParserTests.swift */,
 				3B77035A1E43CC200059F0CD /* Info.plist */,
+				3BA40E1A1E4F981000816856 /* UtilisationXMLParserTest.swift */,
 			);
 			path = EasyXMLParserTests;
 			sourceTree = "<group>";
@@ -216,6 +219,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BA40E1B1E4F981000816856 /* UtilisationXMLParserTest.swift in Sources */,
 				3B7703591E43CC200059F0CD /* EasyXMLParserTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
