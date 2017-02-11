@@ -13,7 +13,7 @@ import XCTest
 class UtilisationXMLParserTest: XCTestCase {
     
     /****************************************************************
-        Simple user case test to find if we find the same blog name
+        Simple user case test to find the same blog name
      ****************************************************************/
     
     func testUtilisation() {
