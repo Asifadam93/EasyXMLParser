@@ -1,5 +1,8 @@
 lane :bonjour do
 
+UI.success "Bravo!"
+UI.error "error"
+
 scan(
 	project: "EasyXMLParser.xcodeproj",
 	code_coverage: true

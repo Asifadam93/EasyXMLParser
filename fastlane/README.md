@@ -33,6 +33,11 @@ xcode-select --install
 fastlane bonjour
 ```
 
+### deploy
+```
+fastlane deploy
+```
+
 
 ----
 
