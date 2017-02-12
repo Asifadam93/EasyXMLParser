@@ -10,9 +10,11 @@
 		054BDEBA1E4DB4440049D62F /* EasyXMLParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054BDEB81E4DB4440049D62F /* EasyXMLParser.swift */; };
 		054BDEBB1E4DB4440049D62F /* EasyXMLParserDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054BDEB91E4DB4440049D62F /* EasyXMLParserDelegate.swift */; };
 		054F81131E4E68A100A819F6 /* EasyXMLElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054F81121E4E68A100A819F6 /* EasyXMLElement.swift */; };
+		3B0804711E50A71E001C0FE2 /* item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0804701E50A71E001C0FE2 /* item.swift */; };
 		3B7703541E43CC200059F0CD /* EasyXMLParser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B77034A1E43CC200059F0CD /* EasyXMLParser.framework */; };
 		3B7703591E43CC200059F0CD /* EasyXMLParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7703581E43CC200059F0CD /* EasyXMLParserTests.swift */; };
 		3B77035B1E43CC200059F0CD /* EasyXMLParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B77034D1E43CC200059F0CD /* EasyXMLParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B8249AF1E50A5B100A7FE92 /* utilisateurs.xml in Resources */ = {isa = PBXBuildFile; fileRef = 3B8249AE1E50A5B100A7FE92 /* utilisateurs.xml */; };
 		3BA40E1B1E4F981000816856 /* UtilisationXMLParserTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA40E1A1E4F981000816856 /* UtilisationXMLParserTest.swift */; };
 /* End PBXBuildFile section */
 
@@ -30,12 +32,14 @@
 		054BDEB81E4DB4440049D62F /* EasyXMLParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EasyXMLParser.swift; sourceTree = "<group>"; };
 		054BDEB91E4DB4440049D62F /* EasyXMLParserDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EasyXMLParserDelegate.swift; sourceTree = "<group>"; };
 		054F81121E4E68A100A819F6 /* EasyXMLElement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EasyXMLElement.swift; sourceTree = "<group>"; };
+		3B0804701E50A71E001C0FE2 /* item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = item.swift; sourceTree = "<group>"; };
 		3B77034A1E43CC200059F0CD /* EasyXMLParser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EasyXMLParser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B77034D1E43CC200059F0CD /* EasyXMLParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EasyXMLParser.h; sourceTree = "<group>"; };
 		3B77034E1E43CC200059F0CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3B7703531E43CC200059F0CD /* EasyXMLParserTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EasyXMLParserTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B7703581E43CC200059F0CD /* EasyXMLParserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyXMLParserTests.swift; sourceTree = "<group>"; };
 		3B77035A1E43CC200059F0CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B8249AE1E50A5B100A7FE92 /* utilisateurs.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = utilisateurs.xml; sourceTree = "<group>"; };
 		3BA40E1A1E4F981000816856 /* UtilisationXMLParserTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UtilisationXMLParserTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -58,6 +62,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3B08046F1E50A6F8001C0FE2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3B0804701E50A71E001C0FE2 /* item.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		3B7703401E43CC200059F0CD = {
 			isa = PBXGroup;
 			children = (
@@ -79,6 +91,8 @@
 		3B77034C1E43CC200059F0CD /* EasyXMLParser */ = {
 			isa = PBXGroup;
 			children = (
+				3B08046F1E50A6F8001C0FE2 /* Model */,
+				3B8249AD1E50A56E00A7FE92 /* xml */,
 				054BDEB81E4DB4440049D62F /* EasyXMLParser.swift */,
 				054BDEB91E4DB4440049D62F /* EasyXMLParserDelegate.swift */,
 				054F81121E4E68A100A819F6 /* EasyXMLElement.swift */,
@@ -96,6 +110,14 @@
 				3BA40E1A1E4F981000816856 /* UtilisationXMLParserTest.swift */,
 			);
 			path = EasyXMLParserTests;
+			sourceTree = "<group>";
+		};
+		3B8249AD1E50A56E00A7FE92 /* xml */ = {
+			isa = PBXGroup;
+			children = (
+				3B8249AE1E50A5B100A7FE92 /* utilisateurs.xml */,
+			);
+			name = xml;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,6 +214,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B8249AF1E50A5B100A7FE92 /* utilisateurs.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,6 +232,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B0804711E50A71E001C0FE2 /* item.swift in Sources */,
 				054F81131E4E68A100A819F6 /* EasyXMLElement.swift in Sources */,
 				054BDEBA1E4DB4440049D62F /* EasyXMLParser.swift in Sources */,
 				054BDEBB1E4DB4440049D62F /* EasyXMLParserDelegate.swift in Sources */,
