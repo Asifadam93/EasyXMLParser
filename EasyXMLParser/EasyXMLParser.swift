@@ -23,25 +23,24 @@ public class EasyXMLParser : NSObject {
         self.parserXML = XMLParser(data: withData)
     }
     
+    
     /*
      * Constructeur de l'objet version URL
      */
     public  init(withUrl: URL) {
         if let parser = XMLParser(contentsOf: withUrl) {
             self.parserXML = parser
-        }else{
+        } else {
             self.parserXML = XMLParser()
         }
     }
-    
+
     
     /*
      * Méthode qui sera appeller pour parser puis renvoyer un array contenant 
      * une ou plusieurs fois la collection demandée par l'utilisateur. 
      */
     public func fill(collection : [String:Any]) -> EasyXMLElement {
-        
-        //print("On m'a demandé de remplir avec une collection ")
 
         return parse()
     }
@@ -60,7 +59,7 @@ public class EasyXMLParser : NSObject {
         return resultat!
     }
 
-
+    
     
     /*
     public func fill(objectName : String) -> [Any] {
@@ -97,13 +96,12 @@ public class EasyXMLParser : NSObject {
          return tempoArray
         
     }*/
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
 }
+
+/* TODO
+extension EasyXMLParser : Sequence
+{
+
+}
+*/
