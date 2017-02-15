@@ -34,16 +34,6 @@ public class EasyXMLParser : NSObject {
             self.parserXML = XMLParser()
         }
     }
-
-    
-    /*
-     * Méthode qui sera appeller pour parser puis renvoyer un array contenant 
-     * une ou plusieurs fois la collection demandée par l'utilisateur. 
-     */
-    public func fill(collection : [String:Any]) -> EasyXMLElement {
-
-        return parse()
-    }
     
     
     /*
@@ -59,49 +49,4 @@ public class EasyXMLParser : NSObject {
         return resultat!
     }
 
-    
-    
-    /*
-    public func fill(objectName : String) -> [Any] {
-        print("\nOn m'a demandé de remplir un objet nommé \("Item")\n")
-        
-        
-        var tempoArray:[Any] = [Any]()
-        
-        var instance: AnyObject! = nil
-        if let classInst = NSClassFromString(objectName) as? NSObject.Type {
-            //print (classInst)
-            
-            instance = classInst.init() // create the instance from this class
-            
-            //print("J'ai une instance \(instance)")
-            
-            let aMirror = Mirror(reflecting: instance)
-            
-            //print("J'ai un mirroir \(aMirror)")
-            
-            /*for case let (label?, value) in aMirror.children {
-                print ("label : \(label), type : \(Mirror(reflecting:value).subjectType)")
-            }*/
-
-            instance.setValue("Faites de vos QR Codes de veritables ...", forKey: "Title")
-            instance.setValue("https://korben.info/de-vos-qr-codes-de-veritables-oeuvres-dart.html", forKey: "Link")
-            instance.setValue(["Script","Service web","QR Code"], forKey: "category")
-            
-            
-            tempoArray.append(instance)
-            
-        }
-        
-         return tempoArray
-        
-    }*/
-
 }
-
-/* TODO
-extension EasyXMLParser : Sequence
-{
-
-}
-*/

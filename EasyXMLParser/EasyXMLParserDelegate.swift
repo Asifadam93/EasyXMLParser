@@ -8,11 +8,10 @@
 
 import UIKit
 
-/**
-  * Un Delegate de Parser XML qui a pour but de parcourir une liste d'item RSS
-  *
-  *
-  */
+/*
+ *  EasyXMLPareser Delega
+ *  Ce dernier permet de remplir items en fonction du parcours d'un fichier XML
+ */
 public class EasyXMLParserDelegate: NSObject, XMLParserDelegate {
     
     var items = EasyXMLElement(name: "root")    //va contenir la collection correspodant au xml
@@ -37,8 +36,6 @@ public class EasyXMLParserDelegate: NSObject, XMLParserDelegate {
 
         //On mémoriser pour utiliser l'élément en cours comme parrent
         let tempoELementEnCours = elementEnCours
-        elementEnCours = elementEnCours[elementName]
-        
 
         let nouveauElement = EasyXMLElement(name: elementName)
         tempoELementEnCours.addEnfant(element: nouveauElement)
