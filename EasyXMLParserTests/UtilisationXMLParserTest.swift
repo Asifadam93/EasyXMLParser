@@ -18,7 +18,7 @@ class UtilisationXMLParserTest: XCTestCase {
     
     func testUtilisation() {
         
-        if let url = URL.init(string: "https://korben.info/feed"){
+        /*if let url = URL.init(string: "https://korben.info/feed"){
             
             if let xmlData = try? Data.init(contentsOf: url){
                 
@@ -32,7 +32,7 @@ class UtilisationXMLParserTest: XCTestCase {
                 
             }
             
-        }
+        }*/
         
     }
     
