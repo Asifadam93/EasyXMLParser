@@ -92,7 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				3B08046F1E50A6F8001C0FE2 /* Model */,
-				3B8249AD1E50A56E00A7FE92 /* xml */,
+				3B8249AD1E50A56E00A7FE92 /* Resource */,
 				054BDEB81E4DB4440049D62F /* EasyXMLParser.swift */,
 				054BDEB91E4DB4440049D62F /* EasyXMLParserDelegate.swift */,
 				054F81121E4E68A100A819F6 /* EasyXMLElement.swift */,
@@ -112,12 +112,12 @@
 			path = EasyXMLParserTests;
 			sourceTree = "<group>";
 		};
-		3B8249AD1E50A56E00A7FE92 /* xml */ = {
+		3B8249AD1E50A56E00A7FE92 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
 				3B8249AE1E50A5B100A7FE92 /* utilisateurs.xml */,
 			);
-			name = xml;
+			name = Resource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
