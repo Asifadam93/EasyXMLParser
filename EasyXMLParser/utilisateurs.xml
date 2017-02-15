@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<utilisateurs>
+	<utilisateur>
+		<nom>Lenore</nom>
+		<mail>et.libero.Proin@vitaeerat.co.uk</mail>
+		<telephone>16520424 5277</telephone>
+		<addresse>2339 Vivamus Ave</addresse>
+		<ville>Şanlıurfa</ville>
+		<code_postal>11600</code_postal>
+		<pay>American Samoa</pay>
+	</utilisateur>
+	<utilisateur>
+		<nom>Neville</nom>
+		<mail>non.enim.commodo@Duiscursusdiam.com</mail>
+		<telephone>16140811 4054</telephone>
+		<addresse>CP 406, 2955 Fusce Chemin</addresse>
+		<ville>Sint-Martens-Lennik</ville>
+		<code_postal>1728</code_postal>
+		<pay>Ukraine</pay>
+	</utilisateur>
+	<utilisateur>
+		<nom>Dylan</nom>
+		<mail>mi.tempor.lorem@auctorMaurisvel.ca</mail>
+		<telephone>16411224 3029</telephone>
+		<addresse>Appartement 802-7768 Egestas. Av.</addresse>
+		<ville>Oyen</ville>
+		<code_postal>40406</code_postal>
+		<pay>Spain</pay>
+	</utilisateur>
+	<utilisateur>
+		<nom>Paki</nom>
+		<mail>magna.Praesent@Donecluctusaliquet.co.uk</mail>
+		<telephone>16780822 5846</telephone>
+		<addresse>1358 Nec, Avenue</addresse>
+		<ville>Colwood</ville>
+		<code_postal>60303</code_postal>
+		<pay>New Caledonia</pay>
+	</utilisateur>
+</utilisateurs>

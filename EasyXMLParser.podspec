@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 s.name         = "EasyXMLParser"
-s.version      = "1.0.7"
-s.summary      = "Parser un fichier XML et de renvoyer des objets ou des dictionnaires de données"
+s.version      = "1.1.0"
+s.summary      = "EasyXMLParser is a simple and easy to use xml parser written in swift for iOs"
 s.homepage     = "https://github.com/Asifadam93/EasyXMLParser"
 s.license      = { :type => "BSD", :file => "LICENSE" }
 s.author       = { "ESGI" => "contact@esgi.fr" }
