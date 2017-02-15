@@ -75,6 +75,34 @@ if let utilisateursFichier = Bundle.main.path(forResource: "utilisateurs", ofTyp
 
 ```
 
+#### Exemple xml file
+
+```xml
+
+<?xml version="1.0" encoding="UTF-8" ?>
+<utilisateurs>
+	<utilisateur>
+		<nom>Lenore</nom>
+		<mail>et.libero.Proin@vitaeerat.co.uk</mail>
+		<telephone>16520424 5277</telephone>
+		<addresse>2339 Vivamus Ave</addresse>
+		<ville>Şanlıurfa</ville>
+		<code_postal>11600</code_postal>
+		<pay>American Samoa</pay>
+	</utilisateur>
+	<utilisateur>
+		<nom>Neville</nom>
+		<mail>non.enim.commodo@Duiscursusdiam.com</mail>
+		<telephone>16140811 4054</telephone>
+		<addresse>CP 406, 2955 Fusce Chemin</addresse>
+		<ville>Sint-Martens-Lennik</ville>
+		<code_postal>1728</code_postal>
+		<pay>Ukraine</pay>
+	</utilisateur>
+</utilisateurs>
+
+```
+
 #### Parsing with an url
 
 ```swift
