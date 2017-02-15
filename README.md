@@ -4,6 +4,7 @@
 
 # EasyXMLParser 
 [![Build Status](https://travis-ci.org/Asifadam93/EasyXMLParser.svg?branch=master)](https://travis-ci.org/Asifadam93/EasyXMLParser)
+[![CocoaPods](https://img.shields.io/badge/CocoaPods-compatible-4BC51D.svg?style=flat)](https://cocoapods.org/pods/EasyXMLParser)
 [![CocoaPods Compatible](https://img.shields.io/cocoapods/v/EasyXMLParser.svg)](https://img.shields.io/cocoapods/v/EasyXMLParser.svg)
 [![Platform](https://img.shields.io/cocoapods/p/EasyXMLParser.svg?style=flat)](https://github.com/Asifadam93/EasyXMLParser)
 [![CocoaPods](https://img.shields.io/cocoapods/l/EasyXMLParser.svg)](https://github.com/Asifadam93/EasyXMLParser/blob/master/LICENSE)
