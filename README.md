@@ -29,7 +29,7 @@ source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '8.2'
 
 target 'TargetName' do
-pod 'EasyXMLParser', '~> 1.0'
+pod 'EasyXMLParser', '~> 1.1'
 end
 ```
 
@@ -44,13 +44,63 @@ $ pod install
 #### Parsing with a xml file
 
 ```swift
-To do
+
+if let utilisateursFichier = Bundle.main.path(forResource: "utilisateurs", ofType: "xml") {
+            if let utilisateursString = try? String(contentsOfFile: utilisateursFichier) {
+                if let utilisateurData = utilisateursString.data(using: .utf8) {
+                    
+                    // Parse xml with EasyXMLParser
+                    let parser = EasyXMLParser(withData: utilisateurData)
+                    let items = parser.parse()
+                    
+                    // data without filter
+                    for item in items["utilisateurs"]["utilisateur"].getSiblingWithSameName() {
+                        print(item.fullDescription())
+                    }
+                    
+                    // data with filter
+                    let filtreUtilisateur = ["utilisateur":["nom":"", "mail":""]]
+                    
+                    for item in items.filter(filtre: filtreUtilisateur) {
+                        print(item.fullDescription())
+                    }
+                    
+                    // casting data
+                    print("Code postal du premier utilisateur (int) : \(items["utilisateurs"]["utilisateur"]["code_postal"].intValue)")
+                    print("Code postal du premier utilisateur (float) : \(items["utilisateurs"]["utilisateur"]["code_postal"].floatValue)\n")
+
+                }
+            }
+        }
+
 ```
 
 #### Parsing with an url
 
 ```swift
-To do
+
+if let url = URL.init(string: "https://korben.info/feed") {
+
+            if let xmlData = try? Data.init(contentsOf: url) {
+               
+                // Parse xml with EasyXMLParser
+                let parser = EasyXMLParser(withData: xmlData)
+                let letFluxRSS = parser.parse()
+                
+                // get channel data
+                print("Nom du flux RSS : \(letFluxRSS["rss"]["channel"]["title"].value)")
+                print("Adress du flux RSS : \(letFluxRSS["rss"]["channel"]["link"].value)")
+                
+                print("Nombre d'article du flux RSS : \(letFluxRSS["rss"]["channel"]["item"].countSiblingWithSameName())")
+                print("Nombre de données pour le premier article : \(letFluxRSS["rss"]["channel"]["item"].countAllChildren()) \n\n")
+                
+                // get article data
+                for article in letFluxRSS["rss"]["channel"]["item"].getSiblingWithSameName() {
+                    print(article.fullDescription())
+                }
+            }
+        }
+
 ```
 
 ## License
