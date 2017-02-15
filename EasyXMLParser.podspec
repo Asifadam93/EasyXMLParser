@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 s.name         = "EasyXMLParser"
-s.version      = "1.1.0"
+s.version      = "1.1.1"
 s.summary      = "EasyXMLParser is a simple and easy to use xml parser written in swift for iOs"
 s.homepage     = "https://github.com/Asifadam93/EasyXMLParser"
 s.license      = { :type => "BSD", :file => "LICENSE" }
