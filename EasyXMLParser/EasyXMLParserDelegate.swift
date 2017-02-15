@@ -9,8 +9,9 @@
 import UIKit
 
 /*
- *  EasyXMLPareser Delega
- *  Ce dernier permet de remplir items en fonction du parcours d'un fichier XML
+ *  EasyXMLPareser Delegate
+ *
+ *  Ce dernier est appelé par un XMLParser initialisé dans le EasyXMLParser
  */
 public class EasyXMLParserDelegate: NSObject, XMLParserDelegate {
     

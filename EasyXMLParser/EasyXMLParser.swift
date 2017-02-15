@@ -8,6 +8,14 @@
 
 import UIKit
 
+/*
+ *  EasyXMLParser est un objet qui permet d'analyser un donnée XML
+ *
+ *  Il dispose de deux constructeurs pouvant recevoir soit un Data d'un contenu XML soit une URL d'un contenu XML
+ *
+ *  La méthode parse permet d'analyser le flux XML via le EasyXMLParserDelegate et de retourner un EasyXMLElement
+ *  (plus d'information dans EasyXMLParserDelegate et EasyXMLElement)
+ */
 public class EasyXMLParser : NSObject {
     
     
